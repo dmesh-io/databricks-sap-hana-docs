@@ -1,4 +1,5 @@
 ## Support
-For support, reach out to us:
-- **Email**: support@example.com
-- **GitHub Issues**: [GitHub Repo](https://github.com/example/etl-connector/issues)
+You can reach us under:
+- **Website**:  [Website](https://www.dmesh.io/contact)
+- **Email**: info@dmesh.io
+- **Linkedin**: [Linkedin](https://www.linkedin.com/in/jwmachado/)

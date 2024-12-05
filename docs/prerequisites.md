@@ -10,3 +10,4 @@ Before starting the integration of SAP HANA with Databricks, ensure that the fol
 5. **Cluster Availability**: Make sure you have access to an appropriate Databricks cluster where the job can be executed. The cluster must meet the necessary resource and environment requirements.
 
 Once these prerequisites are fulfilled, you can proceed with the setup and data ingestion process.
+

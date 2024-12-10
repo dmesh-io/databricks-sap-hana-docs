@@ -1,8 +1,8 @@
 # FAQ
 
-## How do I install the connector?
+## How do I use the connector?
 
-Refer to the [Installation](installation) section for detailed steps.
+To use the connector, the [preconditions](prerequisites.md) must be met. The exact steps to use the connector are descibed [here](usage)
 
 ## How much does it costs?
 

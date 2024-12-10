@@ -1,4 +1,4 @@
-## Support
+## Contacts
 You can reach us under:
 - **Website**:  [Website](https://www.dmesh.io/contact)
 - **Email**: info@dmesh.io

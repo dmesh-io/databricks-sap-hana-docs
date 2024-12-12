@@ -1,4 +1,4 @@
-## Best Practices
+# Best Practices
 
 To ensure a smooth and efficient integration of SAP HANA with Databricks, follow these best practices:
 

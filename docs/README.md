@@ -1,4 +1,5 @@
-## Introduction ![Maintenance](https://img.shields.io/badge/maintenance-active-brightgreen?logo=github)
+# Introduction ![databricks-sap-connector](https://img.shields.io/badge/databricks--sap--connector-active-brightgreen?logo=github)
+
 Welcome to the SAP HANA to Databricks Integration Guide. This documentation provides step-by-step instructions on how to ingest data from SAP HANA into Databricks, enabling seamless data transfer and processing. You will learn how to set up the SAP HANA connector, configure necessary environment parameters, and execute the data extraction process using Databricks Jobs.
 
 ![Introduction Graphic](./images/introduction_graphic.png)

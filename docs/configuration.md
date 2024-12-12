@@ -2,7 +2,7 @@
 
 
 ### How to Ingest Data from SAP HANA to Databricks
-   > **Note**: Make sure the [prerequisities](./prerequisites.md) are met.
+> **Note**: Make sure the [prerequisites](./prerequisites.md) are met.
 <div style="display: flex; justify-content: center; align-items: center; margin: 0; padding: 0;">
   <iframe
     id="usagevideo"
@@ -27,7 +27,7 @@ How to use the connector to integrate SAP HANA with databricks is demonstrated i
 > **Note**: Ensure you have the required permissions to execute tasks on the linked data table.
 
 ## Step 2: Use the Wheel File to Deploy a New Job
-> **Note** To make the injection of the data described in Step 2 and 3 easier you can also use the default yaml-File with your parameters. How this is done can be found [here](examples.md)
+> **Note** To make the injection of the data described in Step 2 easier you can also use the default yaml-File with your parameters. How this is done can be found [here](examples.md)
 
 1. Go to **Databricks Workflows** and create a new job.
 
@@ -43,13 +43,13 @@ How to use the connector to integrate SAP HANA with databricks is demonstrated i
 
 ### Required Parameters
 
-| **Parameter**     | **Description**                                                                           | **Value**                            |
-|-------------------|-------------------------------------------------------------------------------------------|--------------------------------------|
-| **Task Name**     | Name of the job to run.                                                                   | Choose individually, e.g., `test`    |
-| **Type**          | Type of package used for the connector (e.g., Notebook, Python Wheel).                    | `Python wheel`                       |
-| **Package Name**  | Name of the package containing the wheel file logic (defined in the Makefile file).       | `databricks-sap-connector`           |
-| **Entry Point**   | Entry point containing the command for data extraction.                                   | `sap_table`                          |
-| **Cluster**       | Cluster where the connector will run.                                                     | Use an appropriate available cluster |
+| **Parameter**     | **Description**                                                                           | **Value**                             |
+|-------------------|-------------------------------------------------------------------------------------------|---------------------------------------|
+| **Task Name**     | Name of the job to run.                                                                   | Choose individually, e.g., `SAP_VBAP` |
+| **Type**          | Type of package used for the connector (e.g., Notebook, Python Wheel).                    | `Python wheel`                        |
+| **Package Name**  | Name of the package containing the wheel file logic (defined in the Makefile file).       | `databricks-sap-connector`            |
+| **Entry Point**   | Entry point containing the command for data extraction.                                   | `sap_table`                           |
+| **Cluster**       | Cluster where the connector will run.                                                     | Use an appropriate available cluster  |
 
 ---
 
@@ -76,10 +76,10 @@ Define the argument parameters needed for the run:
 ![Input Parameters](./images/parameter_input.png)
 **Example Parameter Input**:
 ```
-["--partitions","40","--table-name","SAP_TABLE_NAME","-tpf","\"SAPSR3\".\"/CUSTOM/SAP_TABLE_NAME\"","-sc","dev_mabras.checkpointschema",
-"-td","dev_mabras.example_sap.adplapsa2","-c","PLANT,RECORDMODE,BPARTNER,COUNTY_CDE,COUNTRY,REGION",
-"-pk","PLANT","-if","ROW_IDENTIFIER","-url","jdbc:sap://test_url.example_sap.adplapsa2","-s","sharedsecretvault",
-"--user-key","hana-username","--password-key","hana-password","--database-name","DB123"]
+["--partitions", "40", "--table-name", "\"SAPHANADB.VBAP\", "--dt-schema-name-checkpoints", "checkpointschema", 
+"--dt-table-name", "vbap", "--dt-schema-name", "default", "--dt-catalog-name", "dev_jomach", 
+"--columns", "*", "--primary-keys", "MANDT, VBELN", "--sap-hana-host", "...", "--scope", "sharedsecretvault", 
+"--user-key", "hana-db-username", "--password-key", "hana-db-password", "--database-name", "All", "--limit", "1000", "--loglevel", "DEBUG"]
 ```
 
 | Parameter                          | Type      | Description                                                                                                                                                                         |
@@ -103,7 +103,7 @@ Define the argument parameters needed for the run:
 | `--loglevel`                       | TEXT      | If true, will print debug information                                                                                                                                               |
 
 
-## Step 3: Start a New Run with the Previously Created Job
+## Step 3: Start a New Run with the previously created Job
 
 Navigate to **Workflows > Jobs > {your_job_name} > Runs** and start a new run to execute the created job.
 

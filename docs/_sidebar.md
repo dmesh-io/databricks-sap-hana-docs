@@ -3,7 +3,7 @@
 - [Prerequisites](prerequisites.md)
 - [Configuration](configuration)
 - [Examples](examples.md)
-- [Contacs](contacts)
+- [Contacts](contacts)
 - [Troubleshooting](troubleshooting.md)
 - [Faq](faq.md)
 - [Best practices](best_practices.md)

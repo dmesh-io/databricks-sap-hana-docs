@@ -1,13 +1,12 @@
-## Troubleshooting
-### Common Issues
-- **Error: Connection timed out**  
-  Ensure the source and destination are reachable and network rules allow access.
+# Troubleshooting
+## Debugging
+Enable debug mode for detailed logging and a better understanding of potential errors.  
+To activate debug mode, set the `--loglevel` parameter to `DEBUG` when creating the Databricks task.  
+For more information, see [here](configuration.md).
 
-- **Error: Invalid configuration file**  
-  Check the syntax of your `config.yaml`.
+## Limited Resources
+While your job is running, check the Spark logs to monitor how much data each partition is processing.  
+If one partition is pulling significantly more data (e.g., 10 GB) compared to others (e.g., 100 MB), your job may experience queuing.  
+This can lead to performance issues or even cause the job to run out of memory. In such cases, you may need to adjust your data partitioning strategy or optimize resource allocation.
+For further help [see](contacts.md)
 
-### Logs
-Enable debug logs for more insights:
-```bash
-etl-connector --config config.yaml --log-level DEBUG
-```

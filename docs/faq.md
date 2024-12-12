@@ -1,8 +1,8 @@
 # FAQ
 
-## How do I install the connector?
+## How do I use the connector?
 
-Refer to the [Installation](installation) section for detailed steps.
+To use the connector, the [preconditions](prerequisites.md) must be met. The exact steps to use the connector are descibed [here](configuration)
 
 ## How much does it costs?
 
@@ -11,3 +11,7 @@ We are a company that provides data engineering consultancy. If you start an eng
 ## Does this connector sends data to other backends?
 
 No. We only use your SAP System and Databricks services inside of your workspace
+
+## Additional Features Needed?
+If you require additional features for your specific use case, [feel free to reach out to us](contacts.md).
+

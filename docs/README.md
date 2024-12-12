@@ -4,6 +4,7 @@ Welcome to the SAP HANA to Databricks Integration Guide. This documentation prov
 
 ![Introduction Graphic](./images/introduction_graphic.png)
   
+One of the key advantages of using our connector is its support for distributed mode on Apache Spark. This enables efficient data processing at scale, making it ideal for big data applications. Highlighting this capability emphasizes the performance benefits our connector delivers.
 
 **The guide covers the following key steps:**
 1. Importing the necessary wheel file into your Databricks workspace.

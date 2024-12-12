@@ -3,22 +3,17 @@
 
 > **Note**: Make sure the [prerequisites](./prerequisites.md) are met.
 
-<div style="display: flex; justify-content: center; align-items: center; margin: 0; padding: 0;">
-  <iframe
-    id="usagevideo"
-    title="Usage Tutorial"
-    style="max-width: 100%; max-height: 100%; border: none"
-    width="560"
-    height="315"
-    src="https://www.youtube.com/embed/azkEQmGVEd0?"
-    allowfullscreen>
-  </iframe>
-</div>
-
-How to use the connector to integrate SAP HANA with Databricks is demonstrated in this video, presented by our CEO, Jorge Machado. The steps are also explained and illustrated in the following sections.
-
 For a **quick guide**, click [here](quickguide.md) to get started instantly.
 
+---
+## Table of Contents
+1. [Step 1: Add the Provided Wheel File to Your Databricks Workspace](#step-1-add-the-provided-wheel-file-to-your-databricks-workspace)
+2. [Step 2: Use the Wheel File to Deploy a New Job](#step-2-use-the-wheel-file-to-deploy-a-new-job)
+    - [Adding Dependent Libraries](#adding-dependent-libraries)
+    - [Setting Environment Parameters](#setting-environment-parameters)
+3. [Step 3: Start a New Run with the Previously Created Job](#step-3-start-a-new-run-with-the-previously-created-job)
+4. [Step 4: Check the Logs of the Run](#step-4-check-the-logs-of-the-run)
+    - [Explanation of Log Outputs](#explanation-of-log-outputs)
 ---
 
 ## Step 1: Add the Provided Wheel File to Your Databricks Workspace

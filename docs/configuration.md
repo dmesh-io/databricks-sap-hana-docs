@@ -17,6 +17,8 @@
 
 How to use the connector to integrate SAP HANA with Databricks is demonstrated in this video, presented by our CEO, Jorge Machado. The steps are also explained and illustrated in the following sections.
 
+For a **quick guide**, click [here](quickguide.md) to get started instantly.
+
 ---
 
 ## Step 1: Add the Provided Wheel File to Your Databricks Workspace

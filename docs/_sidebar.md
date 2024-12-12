@@ -7,3 +7,4 @@
 - [Troubleshooting](troubleshooting.md)
 - [Faq](faq.md)
 - [Best practices](best_practices.md)
+- [Quickguide](quickguide.md)

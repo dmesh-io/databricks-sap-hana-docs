@@ -23,11 +23,13 @@ Prepare valid SAP HANA credentials, including:
 
 ## 4. Required Files
 Ensure you have the following files ready:  
-1. **`wheel.whl` file**: Contains the connector logic and is [provided by us](contacts.md).  
-2. **`ngdbc.jar` file**: Required for database communication and is given by [SAP Support](https://support.sap.com/en/index.html).  
+1. **`wheel.whl`**: Contains the connector logic and is [provided by us](contacts.md).  
+2. **`ngdbc.jar`**: Required for database communication and is given by [SAP](https://support.sap.com/en/index.html).  
 
 ## 5. Databricks Cluster
 Verify access to a suitable Databricks cluster with sufficient resources to run the pipeline.
+
+**Please note:** We do not support databricks sample data services, as we require the ngdbc.jar file for proper database communication.
 
 > **Once the requirements are met, proceed to the [configuration section](configuration).**
 

@@ -14,5 +14,5 @@ See [configuration](configuration) page
 
 ## Secure and compliant with industry standards.
 
-We use Databricks Secrets to grab the proper username and password for connecting to SAP Hana. Se configuration on how to configure this. More info [here](https://learn.microsoft.com/en-us/azure/databricks/security/secrets/)
+We use Databricks Secrets to grab the proper username and password for connecting to SAP HANA. Se configuration on how to configure this. More info [here](https://learn.microsoft.com/en-us/azure/databricks/security/secrets/)
 

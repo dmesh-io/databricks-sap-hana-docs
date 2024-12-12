@@ -1,14 +1,34 @@
-# Prerequisites for the SAP HANA Connector to Databricks
+# Prerequisities
+## 1. Catalog
+Set up a single catalog (e.g., `dev` or `prod`) to manage checkpoints. The catalog is essential for:  
+- Restarting from a saved state in case of failures   
+- Reducing the risk of data loss during processing
 
-> **Note:** Our connector does not support the sample databricks service as it requires a JAR file to function.
-1. **Catalog**: Set up a single catalog for checkpoints (e.g., dev or prod). Use `pipeline_name` as the key.  
-2. **Permissions**: Ensure permissions for file uploads, job creation, and task execution in Databricks. [Details here](https://docs.databricks.com/en/jobs/privileges.html).  
-3. **SAP HANA Access**: Have valid credentials, including username, password, and JDBC URL. [Details here](https://help.sap.com/docs/SAP_HANA_PLATFORM?locale=en-US).  
-4. **Required Files**: Prepare the SAP HANA connector 
-   1. **wheel.whl** [provided by us](contacts.md), containing the connector logic.
-   2. **ngdbc.jar** [provided by SAP HANA](https://support.sap.com/en/index.html), for communication with the database.
-5. **Cluster**: Ensure access to a suitable Databricks cluster.  
+The `pipeline_name` is used as a key within the catalog.
 
-Once ready, proceed to the [setup and ingestion process](configuration).
+## 2. Permissions
+Ensure you have appropriate permissions in Databricks for:  
+- File uploads  
+- Job creation  
+- Task execution  
+
+[Learn more about permissions here](https://docs.databricks.com/en/jobs/privileges.html).
+
+## 3. SAP HANA Access
+Prepare valid SAP HANA credentials, including:  
+- Username and password  
+- JDBC URL  
+
+[Learn more about obtaining these credentials](https://help.sap.com/docs/SAP_HANA_PLATFORM?locale=en-US).
+
+## 4. Required Files
+Ensure you have the following files ready:  
+1. **`wheel.whl` file**: Contains the connector logic and is [provided by us](contacts.md).  
+2. **`ngdbc.jar` file**: Required for database communication and is given by [SAP Support](https://support.sap.com/en/index.html).  
+
+## 5. Databricks Cluster
+Verify access to a suitable Databricks cluster with sufficient resources to run the pipeline.
+
+> **Once the requirements are met, proceed to the [configuration section](configuration).**
 
 

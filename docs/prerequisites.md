@@ -5,9 +5,9 @@
 3. **SAP HANA Access**: Have valid credentials, including username, password, and JDBC URL. [Details here](https://help.sap.com/docs/SAP_HANA_PLATFORM?locale=en-US).  
 4. **Required Files**: Prepare the SAP HANA connector 
    1. **wheel.whl** [provided by us](contacts.md), containing the connector logic.
-   2. **ngdbc.jar** provided by SAP HANA, for communication with the database.
+   2. **ngdbc.jar** [provided by SAP HANA](https://support.sap.com/en/index.html), for communication with the database.
 5. **Cluster**: Ensure access to a suitable Databricks cluster.  
 
-Once ready, proceed to the [setup and ingestion process](usage.md).
+Once ready, proceed to the [setup and ingestion process](configuration).
 
 

@@ -10,7 +10,7 @@ As we use Apache Spark we have this connector running in a distributed mode. Mak
 
 ## Extensive configuration options.
 
-See [configuration](usage) page
+See [configuration](configuration) page
 
 ## Secure and compliant with industry standards.
 

@@ -1,7 +1,7 @@
 - [Introduction](README.md)
 - [Features](features.md)
 - [Prerequisites](prerequisites.md)
-- [Configuration](usage)
+- [Configuration](configuration)
 - [Examples](examples.md)
 - [Contacs](contacts)
 - [Troubleshooting](troubleshooting.md)

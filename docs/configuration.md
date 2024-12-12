@@ -1,10 +1,22 @@
-# Usage
+# Configuration and Usage
+
 
 ### How to Ingest Data from SAP HANA to Databricks
    > **Note**: Make sure the [prerequisities](./prerequisites.md) are met.
+<div style="display: flex; justify-content: center; align-items: center; margin: 0; padding: 0;">
+  <iframe
+    id="usagevideo"
+    title="Usage Tutorial"
+    style="max-width: 100%; max-height: 100%; border: none"
+    width="560"
+    height="315"
+    src="https://www.youtube.com/embed/azkEQmGVEd0?"
+    allowfullscreen>
+  </iframe>
+</div>
+How to use the connector to integrate SAP HANA with databricks is demonstrated in this video, presented by our CEO, Jorge Machado. The steps are also explained and illustrated in the following sections.
 
-
-### Step 1: Add the Provided Wheel File to Your Databricks Workspace
+## Step 1: Add the Provided Wheel File to Your Databricks Workspace
 
 1. Import the wheel file into the workspace. The wheel file acts as a Databricks Asset Bundle, containing programming logic, metadata, and other necessary components for the connector to function.
 
@@ -14,7 +26,7 @@
 
 > **Note**: Ensure you have the required permissions to execute tasks on the linked data table.
 
-### Step 2: Use the Wheel File to Deploy a New Job
+## Step 2: Use the Wheel File to Deploy a New Job
 > **Note** To make the injection of the data described in Step 2 and 3 easier you can also use the default yaml-File with your parameters. How this is done can be found [here](examples.md)
 
 1. Go to **Databricks Workflows** and create a new job.
@@ -91,7 +103,7 @@ Define the argument parameters needed for the run:
 | `--loglevel`                       | TEXT      | If true, will print debug information                                                                                                                                               |
 
 
-### Step 3: Start a New Run with the Previously Created Job
+## Step 3: Start a New Run with the Previously Created Job
 
 Navigate to **Workflows > Jobs > {your_job_name} > Runs** and start a new run to execute the created job.
 
@@ -104,7 +116,7 @@ The output of the run might look like this:
 
 ---
 
-### Step 4: Check the Logs of the Run
+## Step 4: Check the Logs of the Run
 
 1. Go to **Job Runs** and select the run you just executed.  
 2. Here, you can review the outputs that were printed to the console during execution.  
@@ -117,13 +129,13 @@ It should look similar to this:
 
 ### Explanation of Log Outputs
 
-| Output                                  | Meaning                                                                 |
-|-----------------------------------------|-------------------------------------------------------------------------|
-| **No Checkpoint found**                 | The system tried to load a checkpoint for incremental data extraction, but none were found. |
-| **Loading table**                       | Indicates the system is attempting to load the corresponding SAP HALA table. |
-| **Bounds**                              | Displays the shape of the table being processed.                       |
-| **Writing into table**                  | Specifies the table where the extracted data is being written.         |
-| **Pipeline finished: ... : None -> N**  | Indicates the pipeline has finished extracting data, starting from checkpoint `None` and is now at row `N`. |
+| Output                            | Meaning                                                                 |
+|-----------------------------------|-------------------------------------------------------------------------|
+| **No Checkpoint found**           | The system tried to load a checkpoint for incremental data extraction, but none were found. |
+| **Loading table**                 | Indicates the system is attempting to load the corresponding SAP HALA table. |
+| **Bounds**                        | Displays the shape of the table being processed.                       |
+| **Writing into table**            | Specifies the table where the extracted data is being written.         |
+| **Pipeline finished: None -> N**  | Indicates the pipeline has finished extracting data, starting from checkpoint `None` and is now at row `N`. |
 
 
 

@@ -2,7 +2,7 @@
 
 ## How do I use the connector?
 
-To use the connector, the [preconditions](prerequisites.md) must be met. The exact steps to use the connector are descibed [here](usage)
+To use the connector, the [preconditions](prerequisites.md) must be met. The exact steps to use the connector are descibed [here](configuration)
 
 ## How much does it costs?
 

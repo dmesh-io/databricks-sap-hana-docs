@@ -17,7 +17,8 @@ Ensure you have appropriate permissions in Databricks for:
 ## 3. SAP HANA Access
 Prepare valid SAP HANA credentials, including:  
 - Username and password  
-- JDBC URL  
+- JDBC URL
+- SAP HANA Enterprise License
 
 [Learn more about obtaining these credentials](https://help.sap.com/docs/SAP_HANA_PLATFORM?locale=en-US).
 
